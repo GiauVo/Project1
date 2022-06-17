@@ -1,0 +1,23 @@
+{
+  "name": "Project1",
+  "version": "1.0.0",
+  "description": "My first cypress project",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf -r ./cypress/report/*.json",
+    "test": "npx cypress run || npm run posttest",
+    "posttest":"npm run merge-report && npm run generate-htmlreport",
+    "merge-report": "mochawesome-merge ./cypress/report/*.json > ./report1.json",
+    "generate-htmlreport":"marge report1.json ---reportDir cypress/report",
+    "cy:dashboard": "cypress run --record --key 08ae3002-ee7a-4ace-9e56-d9768f97c024"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": { 
+    "cypress": "^8.7.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
