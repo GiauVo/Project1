@@ -1,4 +1,4 @@
-/// <reference types="cypress"/>
+// <reference types="cypress"/>
 import {LoginPage} from "../PO/Login_Page.spec"
 
 var loginPage  = new LoginPage()

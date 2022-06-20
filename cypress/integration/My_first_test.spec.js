@@ -1,4 +1,4 @@
-/// <reference types="cypress"/>
+//<reference types="cypress"/>
 describe('First Test <home>', () => { //home is suite name 
     it('google test', function(){
         cy.visit("https://google.com")

@@ -1,4 +1,4 @@
-/// <reference types="cypress"/>
+// <reference types="cypress"/>
 describe('Second Test <smoke>', () => { //two suites smoke
     it('google test <smoke>', function(){
         cy.visit("https://example.cypress.io")
