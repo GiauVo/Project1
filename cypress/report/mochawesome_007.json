@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-20T07:33:58.509Z",
+    "end": "2022-06-20T07:34:14.960Z",
+    "duration": 16451,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "952bf894-12d5-4b44-907a-c9f05ac0c04d",
+      "title": "",
+      "fullFile": "cypress/integration/My_first_test.spec.js",
+      "file": "cypress/integration/My_first_test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4beb237d-f338-4e3d-946f-fcf5b7f442d2",
+          "title": "First Test <home>",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "google test",
+              "fullTitle": "First Test <home> google test",
+              "timedOut": null,
+              "duration": 14177,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://google.com\");\ncy.get('.gLFyf').type('Automation Step by Step{enter}');\ncy.wait(6000);\ncy.contains('Video').click();",
+              "err": {},
+              "uuid": "a6326ce2-12b4-4fcb-8487-788aa348c838",
+              "parentUUID": "4beb237d-f338-4e3d-946f-fcf5b7f442d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6326ce2-12b4-4fcb-8487-788aa348c838"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14177,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
